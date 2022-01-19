@@ -1,3 +1,5 @@
+// This is not good, we should not use Array.reduce with inner spread
+
 function intersperse(arr, separator) {
   return arr.reduce((acc, currentElement, currentIndex) => {
     const isLast = currentIndex === arr.length - 1;
